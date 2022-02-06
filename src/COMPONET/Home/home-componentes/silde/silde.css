@@ -1,0 +1,75 @@
+.contanira-silde {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../../../images/background-one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contanira-silde .overliert {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+
+.contanira-silde h1 {
+  font-size: 3em;
+  color: #10cab7;
+  z-index: 5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.contanira-silde p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+  z-index: 6;
+  width: 70%;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  opacity: 0;
+}
+
+@media screen and (max-width: 599px) {
+  .contanira-silde h1 {
+    font-size: 2em;
+  }
+  .contanira-silde p {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=silde.css.map */

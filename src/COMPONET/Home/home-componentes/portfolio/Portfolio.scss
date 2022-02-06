@@ -1,0 +1,22 @@
+.portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+  }
+  .portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    margin-top: 80px;
+    padding: 20px;
+  }
+  .portfolio .portfolio-content .card {
+    background-color: white;
+  }
+  .portfolio .portfolio-content .card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .portfolio .portfolio-content .card .info {
+    padding: 20px;
+  }

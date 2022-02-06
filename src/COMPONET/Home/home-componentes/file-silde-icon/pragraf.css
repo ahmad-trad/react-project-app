@@ -1,0 +1,79 @@
+.contaniar {
+  width: 100%;
+  min-height: 500px;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(310px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.contaniar .one {
+  opacity: 0;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contaniar .two {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contaniar .thre {
+  opacity: 0;
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contaniar .icon-silde {
+  height: 300px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px 1px #00000049;
+          box-shadow: 0 0 20px 1px #00000049;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contaniar .icon-silde i {
+  color: #10cab7;
+  font-size: 3em;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.contaniar .icon-silde h2 {
+  font-size: 1.3em;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.contaniar .icon-silde p {
+  font-size: 1em;
+  line-height: 1.8;
+}
+/*# sourceMappingURL=pragraf.css.map */

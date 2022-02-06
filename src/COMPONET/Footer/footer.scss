@@ -1,0 +1,16 @@
+$colorMs: #10cab7;
+$moColor: #2c4755;
+
+.footer {
+    background-color: $moColor;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+
+    span {
+      font-weight: bold;
+      color: $colorMs;
+    }
+  }
+
