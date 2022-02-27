@@ -1,23 +1,18 @@
-import React, {useRef , useEffect} from 'react';
+import React from 'react';
 import './silde.css';
-import { gsap , Power3} from 'gsap';
+
 
 function Sildeimag(){
 
-    let headOne = useRef();
-    let pragOne = useRef();
-
-    useEffect(() => {
-        gsap.to(headOne.current , { y: 0 , delay: 1 , opacity: 1 , ease: Power3.easeOut, duration: .3 });
-        gsap.to(pragOne.current , { y: 0 , delay: 2 , opacity: 1 , ease: Power3.easeOut, duration: .3 });
-    }, [])
+   
     
     return(
         <>
         <div className='contanira-silde'>
-            <h1 ref={headOne} >Hello There!</h1>
-            <p ref={pragOne}>We are Leon - Super Creative & Minimal 
-            Agency  Web Template</p>
+            <h1>adventure awaits</h1>
+            <p>what are you waiting for ?</p>
+            <button  className='premare' >get start</button>
+            <button className='out-line' >watch traller <i className='far fa-play-circle'></i></button>
             <div className='overliert'></div>
         </div>
         </>

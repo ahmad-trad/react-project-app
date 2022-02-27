@@ -1,8 +1,8 @@
 @import './mixin' ;
 
 //var
-$colorMain: #fff;
-$colorMs: #10cab7;
+$colorMain: #141414;
+$colorMs: #fff;
 //
 header{
     width: 100%;
@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: $colorMain;
+    position: relative;
 
     .icon{
         display: none;
@@ -31,9 +32,9 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: 50px;
-            height: 20px;
+        i{
+            font-size: 30px;
+            color: $colorMs;
         }
     }
     .nav-menu{
@@ -43,13 +44,19 @@ header{
             display: flex;
             justify-content: space-evenly;
 
+            
             a{
                 text-decoration: none;
                 color: $colorMs;
                 transition: .3s;
                 user-select: none;
-                padding: 5px;
-                border-radius: 4px;
+                padding: 6px;
+                border-radius: 6px;
+                font-weight: 400;
+                
+                &:last-child{
+                    border: 1px solid $colorMs;
+                }
 
                 &.active{
                     background-color: $colorMs;
@@ -69,42 +76,47 @@ header{
 
 @include sm{
     header{
-        overflow: hidden;
-
         .logo{
             width: 20%;
         }
     }
 
     header .nav-menu {
-        display: none;
-        background-color: $colorMs;
-        height: 100vh;
-        width: 70%;
+        height: calc(100vh - 50px);
+        width: 100%;
         position: absolute;
-        right: -50%;
+        right: 0;
         top: 50px;
+        transform: translateX(100%);
         transition: .5s;
-        z-index: 99;
+        z-index: 300;
+        display: none;
+        
+
         .navbar{
+            display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
             height: 100%;
+            background-color: $colorMain;
+            padding-top: 50px;
+        
     
             a{
-                padding: 18px;
+                padding: 20px;
                 display: inline-block;
-                width: 100%;
+                margin-bottom: 5px;
+                width: 80%;
                 text-align: center;
                 height: 10%;
-                border-top:1px solid #fff;
-                border-bottom: 1px solid #fff;
-                color: $colorMain;
-                
-                
+                color: $colorMs;
+                font-size: 20px;
+                transition: .8s;
+
                 &:hover{
-                    background-color: #333;
-                    
+                    background-color: $colorMs;
+                    color: $colorMain;
                 }
             }
         }
@@ -119,7 +131,7 @@ header{
     }
     .nav-menu.active{
         display: block;
-        right: 0;
+        transform: translateX(0);
     }
 }
 
