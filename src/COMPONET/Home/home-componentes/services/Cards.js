@@ -1,7 +1,6 @@
 import React from "react";
 import './services.css';
 import img from "../../../images/img-3.jpg";
-import imga from "../../../images/img-2.jpg";
 import imgb from "../../../images/img-4.jpg";
 import imgc from "../../../images/img-5.jpg";
 import imgd from "../../../images/img-6.jpg";
